@@ -1,0 +1,52 @@
+.Card_preview {
+  width: 1319px;
+  display: flex;
+  margin-top: 94px;
+  img {
+    width: 379px;
+    height: 253px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  .Card_info {
+    .Slash_info {
+      display: flex;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      .Heading:nth-child(2) {
+        color: var(--blue-60);
+      }
+    }
+    .Link {
+      margin-bottom: 34px;
+      display: block;
+    }
+    .Action_block {
+      .Buttons {
+        display: flex;
+        button {
+          margin-right: 32px;
+        }
+      }
+      .Why_not_block {
+        display: flex;
+        width: 418px;
+        margin-top: 16px;
+        img {
+          width: auto;
+          height: 32px;
+          object-fit: none;
+          margin-right: 10px;
+        }
+        div {
+          font-size: 19px;
+          line-height: 26px;
+          a {
+            color: var(--blue-60);
+          }
+        }
+      }
+    }
+  }
+}
