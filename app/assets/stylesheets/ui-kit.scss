@@ -1,15 +1,31 @@
 .h-h1 {
-  font-family: "HSE Sans", sans-serif;
-  font-size: 39px;
-  line-height: 48px;
-  font-weight: normal;
+  @media (min-width: 376px) and (max-width: 1920px) {
+    font-family: "HSE Sans", sans-serif;
+    font-size: 39px;
+    line-height: 48px;
+    font-weight: normal;
+  }
+  @media (max-width: 375px) {
+    font-family: "HSE Sans", sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: normal;
+  }
 }
 
 .h-h2 {
-  font-family: "HSE Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: bold;
+  @media (min-width: 376px) and (max-width: 1920px) {
+    font-family: "HSE Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  @media (max-width: 375px) {
+    font-family: "HSE Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+  }
 }
 
 .p-p1 {

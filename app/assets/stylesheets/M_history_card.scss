@@ -1,10 +1,13 @@
 .Card_preview {
-  width: 1319px;
+  max-width: 1440px;
+  width: 84vw;
   display: flex;
   margin-top: 94px;
   img {
-    width: 379px;
-    height: 253px;
+    width: 27.4vw;
+    max-width: 448px;
+    height: 18vw;
+    max-height: 298px;
     object-fit: cover;
     margin-right: 30px;
   }
@@ -44,6 +47,71 @@
           line-height: 26px;
           a {
             color: var(--blue-60);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .Card_preview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    overflow-x: hidden;
+    margin-top: 64px;
+    img {
+      width: 100%;
+      height: 239px;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+    .Card_info {
+      .Slash_info {
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        .Heading:nth-child(2) {
+          color: var(--blue-60);
+        }
+      }
+      .Link {
+        margin-bottom: 18px;
+        display: block;
+      }
+      .Action_block {
+        display: flex;
+        flex-direction: column-reverse;
+        .Buttons {
+          display: flex;
+          button:nth-child(1) {
+            width: 50%;
+            margin: 0;
+          }
+          button:nth-child(2) {
+            width: 51%;
+            margin: 0 0 0 -1px;
+          }
+        }
+        .Why_not_block {
+          display: flex;
+          width: 100%;
+          margin: 0 0 8px 0;
+          img {
+            width: auto;
+            height: 32px;
+            object-fit: none;
+            margin-right: 10px;
+          }
+          div {
+            font-size: 18px;
+            line-height: 24px;
+            a {
+              color: var(--blue-60);
+            }
           }
         }
       }
