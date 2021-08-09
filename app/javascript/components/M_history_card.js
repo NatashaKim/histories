@@ -9,15 +9,19 @@ class M_history_card extends React.Component {
 
   render () {
 
-    let firstLineDisabled = "";
+    let firstLineVisability = ""
+
     if (this.props.history.first_line == false) {
-      firstLineDisabled = true
+      firstLineVisability = "ButtonHidden"
     }
 
-    let secondLineDisabled = ""
+    let secondLineVisability = ""
     if (this.props.history.second_line == false) {
-      secondLineDisabled = true
+      secondLineVisability = "ButtonHidden"
     }
+
+    let firstLineDisabled = "";
+    let secondLineDisabled = ""
 
     let infoText = "";
     if (this.props.history.is_passed == true) {
@@ -64,11 +68,13 @@ class M_history_card extends React.Component {
                   value = "1 линейка"
                   buttonStyle = "btn--line"
                   buttonState = {firstLineDisabled}
+                  buttonVisability = {firstLineVisability}
                 />
                 <A_button
                  value = "2 линейка"
                  buttonStyle = "btn--line"
                  buttonState = {secondLineDisabled}
+                 buttonVisability = {secondLineVisability}
                 />
               </div>
               {infoText}

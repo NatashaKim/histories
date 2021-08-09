@@ -34,7 +34,7 @@ class A_button extends React.Component {
 
         return (
 
-            <button className = {`btn ${checkButtonStyle} ${this.state.active ? 'btn-active': null}`} onClick = {this.toggleClass} disabled={checkButtonState} >
+            <button className = {`btn ${checkButtonStyle} ${this.props.buttonVisability} ${this.state.active ? 'btn-active': null}`} onClick = {this.toggleClass} disabled={checkButtonState} >
               <div>{this.props.value}</div>
             </button>
         )
